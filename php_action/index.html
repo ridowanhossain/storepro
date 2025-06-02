@@ -1,0 +1,174 @@
+<style>
+p, h2{
+	margin: 0;
+	padding: 0;
+}
+th{text-align: left}
+.text-right{text-align:right}
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+table.table-bordered{border: 1px solid #000}
+table.table-bordered>tbody>tr>th {
+    border: 1px solid #000;
+}
+table>tbody>tr>th{
+    padding-left: 15px;
+}
+table>tbody>tr>th.text-right{
+    padding-right: 15px;
+}
+h2{
+    padding-top:10px;
+    margin-bottom: 0;
+}
+body, table>thead>tr>th, table>tbody>tr>td, table>tbody>tr>th{
+	font-family: solaimanlipi;
+	font-size: 10px;
+}
+table>tbody>tr>th>h2{
+	font-size: 15px;
+}
+table.table-bordered>tbody>tr>th.no-border{
+	border:0;
+}
+.f-p{
+	float: left;
+}
+.f-pt{
+	float: right;
+	font-weight: 700;
+}
+.dokan{
+	text-align: center;
+	font-size: 28px;
+}
+.dd{
+	position: relative;
+	text-align: center;
+	height: 50px;
+}
+.fl{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 28px;
+	padding: 0;
+}
+.fr{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 28px;
+	padding: 0;
+}
+
+</style>
+<div>
+	<h2 class="dokan">SHADMAN ELECTRONICS</h2>
+	<div class="dd">
+		<h2 class="common fl">SONY</h2>
+		<p class="">SABEK SONALI BANK, SADAR ROAD, KALAI, JOYPURHAT <br> MOBILE: 01765-010004, 01715-319715</p>
+		<h2 class="common fr">RANGS</h2>
+	</div>
+</div>
+ <table class="" width="100%">
+ 	<thead></thead>
+	<tbody>
+		<tr>
+			<th><p>PRO: S. M. Alomgir</p></th>
+			<th class="text-right"><p>Client Name: Ridowan Hossain</p></th>
+		</tr>
+		<tr>
+			<th><p>Dealer: Sony Rangs, Gold Star, Unitech, Vision</p></th>
+			<th class="text-right"><p>Address: Kalai, Joypurhat</p></th>
+		</tr>
+		<tr>
+			<th><p>Date: 10/12/2017</p></th>
+			<th class="text-right"><p>Note: Chassis No. 762929023727</p></th>
+		</tr>
+		<tr>
+			<th><p>ID: </p></th>
+			<th class="text-right"><p>Mobile: 01715363555</p></th>
+		</tr>
+	</tbody>
+</table>
+<table  class="table-bordered" width="100%;">
+	<thead></thead>
+	<tbody>
+		<tr>
+			<th>Sl.no</th>
+			<th>Brand</th>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Total</th>
+		</tr>';
+		<tr>
+				<th>'.$x.'</th>
+				<th>'.$rows[0].'</th>
+				<th>'.$row[4].'</th>
+				<th>'.$row[1].'</th>
+				<th>'.$row[2].'</th>
+				<th>'.$row[3].'</th>
+		</tr>
+		
+		<tr>
+			<th class="no-border" colspan="4"></th>
+			<th>Sub Total</th>
+			<th>'.$subTotal.'</th>
+		</tr>
+
+		<tr>
+			<th class="no-border" colspan="4"></th>
+			<th>VAT (0%)</th>
+			<th>'.$vat.'</th>
+		</tr>
+
+		<tr>
+			<th class="no-border" colspan="4"></th>
+			<th>Total Amount</th>
+			<th>'.$totalAmount.'</th>
+		</tr>
+
+		<tr>
+			<th class="no-border" colspan="4"></th>
+			<th>Discount</th>
+			<th>'.$discount.'</th>
+		</tr>
+
+		<tr>
+			<th class="no-border" colspan="4"></th>
+			<th>Grand Total</th>
+			<th>'.$grandTotal.'</th>
+		</tr>
+
+		<tr>
+			<th class="no-border" colspan="2"><center>.........................</center></th>
+			<th class="no-border" colspan="2"><center>.........................</center></th>
+			<th>Paid</th>
+			<th>'.$paid.'</th>
+		</tr>
+
+		<tr>
+			<th class="no-border" colspan="2"><center>Signeture(Client)</center></th>
+			<th class="no-border" colspan="2"><center>Signeture(Seller)</center></th>
+			<th>Due</th>
+			<th>'.$due.'</th>
+		</tr>
+        <tr>
+            <th class="no-border" colspan="2"></th>
+            <th class="no-border" colspan="2"><center>'.$seller.'<center></th>
+            <th>Previous Due</th>
+            <th>'.$present_jer.'</th>
+        </tr>
+        <tr>
+            <th class="no-border" colspan="4"></th>
+            <th>Total Due</th>
+            <th>'.$total_due.'</th>
+        </tr>
+	</tbody>
+</table>
+<p class="f-p">'.$company_name.'</p>
+<p class="f-pt">Contact: '.$contact_no.', email: '.$email_addr.'</p>
