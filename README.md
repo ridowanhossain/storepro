@@ -30,13 +30,13 @@ StorePro is a comprehensive store management system that helps you manage your s
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/storepro.git
+   git clone https://github.com/ridowanhossain/storepro.git
    ```
 
 2. Set up the application
    - Start your web server and MySQL services
-   - Import the database schema from the `database` folder
-   - Configure your database settings in `includes/config.php`
+   - Import the database schema from the `storepro` folder
+   - Configure your database settings in `php_action/db.php`
    - Access the application through your web browser:
      ```
      http://localhost/storepro
@@ -112,7 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Ridowan Hossain** - *Initial work* - [YourGitHub](https://github.com/ridowanhossain)
 
 ## 🙏 Acknowledgments
 
@@ -126,6 +126,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **[⬆ back to top](#storepro---store-management-system)**
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Ridowan Hossain](https://github.com/ridowanhossain)
 
 </div>
