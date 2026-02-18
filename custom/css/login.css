@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* Reset & Basic Setup */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    /* Modern Gradient Background */
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Login Card Container */
+.login-form {
+    background: #ffffff;
+    width: 380px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+/* Heading */
+.login-form h1 {
+    margin: 0 0 30px;
+    color: #555;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: static;
+}
+
+.login-form h2 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Floating Messages */
+.messages {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.alert {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.alert-warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+    border: 1px solid #faebcc;
+}
+
+/* Form Styles */
+form {
+    padding: 0;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Inputs */
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1; /* Distinct borders */
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #2c3e50;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(44, 62, 80, 0.2);
+}
+
+/* Icons - Optional: Hiding old sprite icons for clearer design */
+.icon {
+    display: none; 
+}
+
+/* Submit Button */
+.forgot {
+    margin-top: 10px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    float: none;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    background: #34495e;
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+    /* No weird background change on hover, just subtle effect */
+}
+
+/* Version Info */
+.vdiv {
+    margin-top: 25px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    text-align: center;
+    position: static;
+    width: 100%;
+}
+
+.vdiv p {
+    color: #999;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Copyright Footer */
+.copy-right {
+    margin-top: 30px;
+    position: static;
+    text-align: center;
+}
+
+.copy-right p {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+}
+
+.copy-right a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
+}
+
+.copy-right a:hover {
+    color: #2c3e50;
+    border-bottom-style: solid;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
